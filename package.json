@@ -1,0 +1,24 @@
+{
+  "name": "week_11_hangman",
+  "version": "1.0.0",
+  "description": "Advanced JavaScript Assignment: Constructor Hangman Overview In this week's assignment, you will create a hangman command-line game using constructor functions.",
+  "main": "index.js",
+  "dependencies": {
+    "inquirer": "^5.0.1",
+    "npm-install-prompt": "^0.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slevano1/week11Hangman.git"
+  },
+  "author": "Steven Levano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slevano1/week11Hangman/issues"
+  },
+  "homepage": "https://github.com/slevano1/week11Hangman#readme"
+}
