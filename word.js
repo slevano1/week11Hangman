@@ -8,14 +8,14 @@ function word(value){
 		this.letters.push(new letterConstruct.letter(this.value[i]));
 	}
 };
-
+//adds new properties to object constructors
 word.prototype.isComplete = function(){
 	for(var i = 0; i < this.letters.length; i++){
 		if(!this.letters[i].show) return false;
 	}
 	return true;
 }
-
+//subtracts the counter with every non-duplicate guess
 word.prototype.findLetter = function(letter){
 	var lowerLetter = letter.toLowerCase();
 	if (this.guessesMade.indexOf(lowerLetter) != -1) {
@@ -39,4 +39,4 @@ word.prototype.toString = function(){
   return output;
 }
 
-exports.wordCons = word;
+exports.wordConstruct = word;

@@ -11,5 +11,5 @@ letter.prototype.printInfo = function() {
 	}
 	return " _ ";
 }
-
+// export to use in word.js
 exports.letter = letter;

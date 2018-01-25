@@ -1,22 +1,24 @@
 
 var game = require("./game.js");
 
-var wordCons = require("./word.js");
+var wordConstruct = require("./word.js");
+//Ties to word.js file
 var letterConstruct = require("./letter.js");
 //able to read user input in the console
 var inquirer = require("inquirer");
+//ties to games.js file
 var randomWord = game.randomWord;
 var letterGuessed;
 exports.letter;
 
 
-var myWord = new wordCons.wordCons(game.randomWord);
-var maxGuesses = 10;
+var myWord = new wordConstruct.wordConstruct(game.randomWord);
+var maxGuesses = 12;
 function takeAGuess(){
     console.log('Star Wars - Characters and Places');
     console.log(myWord.toString());
     if (myWord.guessesMade.length >= maxGuesses){
-        console.log('Oh no. You lost. Hit the Up Arrow to play again');
+        console.log('Oh no. You lost. Hit the Up Arrow, then enter to play again');
     return;
     }
 
